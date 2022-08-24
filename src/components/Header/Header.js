@@ -8,6 +8,12 @@ const Header = () => {
             <HeaderTop/>
             <Text style={styles.headerStyle}>Chats</Text>
             <HeaderBottom/>
+            <View
+                style={{
+                    borderBottomColor: 'gray',
+                    borderBottomWidth: 0.4,
+                }}
+            />
         </View>
     )
 
