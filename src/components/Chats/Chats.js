@@ -3,7 +3,8 @@ import { View, Text, StyleSheet, Image } from "react-native";
 import Icon from 'react-native-vector-icons/Octicons';
 
 const Chats = () => {
-
+    
+    
     return (
         <View style={styles.chatContainer}>
             <View style={styles.archiveContainer}>
@@ -21,6 +22,7 @@ const Chats = () => {
         </View>
     )
 }
+
 
 const Chat = () => {
 
