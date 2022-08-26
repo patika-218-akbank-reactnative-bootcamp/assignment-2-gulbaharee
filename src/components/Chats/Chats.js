@@ -16,15 +16,27 @@ const Chats = () => {
                     borderBottomWidth: 0.4,
                 }}
             />
+            <Chat />
+            <Chat />
+        </View>
+    )
+}
+
+const Chat = () => {
+
+    return (
+        <View>
             <View style={styles.chatStyle}>
                 <Image source={{ uri: "https://picsum.photos/200/200" }} style={styles.userImage} />
                 <View style={styles.chatBox}>
-                    <Text style={styles.chatUser}>sena kılınç</Text>
-                    <Text></Text>
+                    <Text style={styles.chatUser}>Sena Kılınç</Text>
+                    <Text style={styles.messagaContext}>görüşürüz</Text>
                 </View>
                 <Text style={styles.messageDate}>22.34</Text>
             </View>
+            <View style={styles.border} />
         </View>
+
     )
 }
 
@@ -69,10 +81,22 @@ const styles = StyleSheet.create(
         chatBox: {
             display: "flex",
             flexDirection: "column",
+            height: 40,
         },
         chatUser: {
-            fontSize:20,
-            fontWeight:"600",
+            fontSize: 20,
+            fontWeight: "600",
+            flex: 1,
+            width: 250,
+        },
+        messagaContext: {
+            fontSize: 13,
+        },
+        border: {
+            borderBottomColor: 'gray',
+            borderBottomWidth: 0.4,
+            width: 300,
+            marginLeft: 45,
         }
     }
 )
