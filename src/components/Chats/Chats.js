@@ -1,10 +1,18 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 import Icon from 'react-native-vector-icons/Octicons';
+import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
+import {useNavigation} from '@react-navigation/native';
 
 const Chats = () => {
-    
-    
+
+    const {navigate} = useNavigation();
+
+    const goChatBox = (title) => {
+        navigate('ChatBox', { title})
+    }
+
     return (
         <View style={styles.chatContainer}>
             <View style={styles.archiveContainer}>
@@ -17,8 +25,21 @@ const Chats = () => {
                     borderBottomWidth: 0.4,
                 }}
             />
-            <Chat />
-            <Chat />
+            <ScrollView>
+                <Pressable onPress={() => { goChatBox("Sena") }}>
+                    <Chat />
+                </Pressable>
+
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+            </ScrollView>
         </View>
     )
 }
