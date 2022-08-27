@@ -1,4 +1,4 @@
-# assignment-1-gulbaharee
+# assignment-2 / Whatsapp Clone Project
 
 ## Description
 
