@@ -8,7 +8,9 @@ The main purpose of the project was to use the navigator. Separate components we
 
 ## Installation
 
+`yarn install`
 `npm i react-native-vector-icons`
+`yarn start`
 
 ##
 
