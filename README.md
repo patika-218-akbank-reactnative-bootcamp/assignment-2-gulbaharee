@@ -1,1 +1,16 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8260751&assignment_repo_type=AssignmentRepo)
+# assignment-1-gulbaharee
+
+## Description
+
+This project created for Akbank react native bootcamp. In this project, except react-native packages I used react-native-vector-icons for app icons.
+This project is whatsapp clone project.
+The main purpose of the project was to use the navigator. Separate components were prepared for repetitive situations. Components are created in reusable format with props.
+
+## Installation
+
+`npm i react-native-vector-icons`
+
+##
+
+
+<img width="343" alt="Screen Shot 2022-08-27 at 03 46 23" src="https://user-images.githubusercontent.com/51902056/187008382-83a52a80-f712-453d-bd85-a838355a8e99.png"> <img width="367" alt="Screen Shot 2022-08-27 at 03 46 30" src="https://user-images.githubusercontent.com/51902056/187008387-1613a41f-a241-49f5-a221-11bc0db3e977.png">
