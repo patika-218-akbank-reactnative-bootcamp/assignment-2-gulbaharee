@@ -14,6 +14,7 @@ const Stack = createStackNavigator();
 const App=() => {
  
   return (
+    //for switching between pages added navigator
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen options={{headerShown: false}} name="Chats" component={ChatPage}/>

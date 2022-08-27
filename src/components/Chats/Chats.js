@@ -3,14 +3,17 @@ import { View, Text, StyleSheet, Image } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import Icon from 'react-native-vector-icons/Octicons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
+import { chatList } from '../../assets/ChatList';
 
 const Chats = () => {
 
-    const {navigate} = useNavigation();
+    const { navigate } = useNavigation();
 
-    const goChatBox = (title) => {
-        navigate('ChatBox', { title})
+    //function to go to message detail
+    //parameters are given to get user info
+    const goChatBox = (id,name,text) => {
+        navigate('ChatBox', { id,name,text })
     }
 
     return (
@@ -26,34 +29,26 @@ const Chats = () => {
                 }}
             />
             <ScrollView>
-                <Pressable onPress={() => { goChatBox("Sena") }}>
-                    <Chat />
-                </Pressable>
-
-                <Chat />
-                <Chat />
-                <Chat />
-                <Chat />
-                <Chat />
-                <Chat />
-                <Chat />
-                <Chat />
-                <Chat />
+                //according to mock data this component will be repeated
+                {chatList.map(chats =>
+                    <Pressable onPress={() => { goChatBox(chats.id,chats.receiver.firstName,chats.message[0].text) }}>
+                        <Chat id={chats.id} name={chats.receiver.firstName} text={chats.message[0].text}/>
+                    </Pressable>)}
             </ScrollView>
-        </View>
+        </View >
     )
 }
 
-
-const Chat = () => {
+//chat in reusable format for message lines
+const Chat = ({id, name, text}) => {
 
     return (
-        <View>
+        <View key={id}>
             <View style={styles.chatStyle}>
                 <Image source={{ uri: "https://picsum.photos/200/200" }} style={styles.userImage} />
                 <View style={styles.chatBox}>
-                    <Text style={styles.chatUser}>Sena Kılınç</Text>
-                    <Text style={styles.messagaContext}>görüşürüz</Text>
+                    <Text style={styles.chatUser}>{name}</Text>
+                    <Text style={styles.messagaContext}>{text}</Text>
                 </View>
                 <Text style={styles.messageDate}>22.34</Text>
             </View>

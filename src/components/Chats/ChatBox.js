@@ -7,13 +7,13 @@ import { ScrollView } from "react-native-gesture-handler";
 import {useNavigation} from '@react-navigation/native';
 
 export default ChatBox = ({ route }) => {
-    const { title } = route.params;
+    const { id,name,text } = route.params;
     const {goBack} =useNavigation();
     return (
         <View>
             <View style={styles.header}>
                 <IconIonicons name="chevron-back-sharp" style={{ marginTop:60,marginLeft:10}} size={25} onPress={()=>goBack('Chats')}/>
-                <Text style={styles.Receiver}>{title}</Text>
+                <Text style={styles.Receiver}>{name}</Text>
                 <View style={styles.icon} >
                     <Icon style={{ marginRight: 15 }} name="phone" size={25}></Icon>
                     <IconOction name="device-camera-video" size={25} />
@@ -27,8 +27,7 @@ export default ChatBox = ({ route }) => {
                 }}
             />
             <ScrollView style={{ height: 600 }}>
-                <Messages />
-                <Messages />
+                <Messages text={text}/>
             </ScrollView>
             <View
                 style={{
@@ -44,10 +43,11 @@ export default ChatBox = ({ route }) => {
     )
 }
 
-const Messages = () => {
+//message boxes
+const Messages = ({text}) => {
     return (
         <View style={styles.chatbox}>
-            <Text style={styles.message}>selam!</Text>
+            <Text style={styles.message}>{text}</Text>
         </View>
     )
 

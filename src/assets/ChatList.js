@@ -26,7 +26,7 @@ export const chatList = [
         },
         message: [
             {
-                text: "selam!",
+                text: "hi!",
                 datetime : "2022-08-20T19:00:00.000Z",
             },
             {
@@ -48,7 +48,7 @@ export const chatList = [
                 datetime : "2022-08-20T19:00:00.000Z",
             },
             {
-                text: "nasılsın!",
+                text: "naber!",
                 datetime : "2022-08-20T19:00:00.000Z",
             },
         ]
@@ -62,7 +62,7 @@ export const chatList = [
         },
         message: [
             {
-                text: "selam!",
+                text: "hola!",
                 datetime : "2022-08-20T19:00:00.000Z",
             },
             {
@@ -80,7 +80,7 @@ export const chatList = [
         },
         message: [
             {
-                text: "selam!",
+                text: "naber!",
                 datetime : "2022-08-20T19:00:00.000Z",
             },
             {
@@ -134,97 +134,7 @@ export const chatList = [
         },
         message: [
             {
-                text: "selam!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-            {
-                text: "nasılsın!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-        ]
-    },
-    {
-        id: "dfs*4k2-d",
-        receiver: {
-            id: "bgnı0-tyb",
-            firstName: "Berk",
-            lastName: "Çatal"
-        },
-        message: [
-            {
-                text: "selam!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-            {
-                text: "nasılsın!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-        ]
-    },
-    {
-        id: "s-fkcw3",
-        receiver: {
-            id: "hb56-tyb",
-            firstName: "Enes",
-            lastName: "Kılınç"
-        },
-        message: [
-            {
-                text: "selam!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-            {
-                text: "nasılsın!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-        ]
-    },
-    {
-        id: "fsşfm*2",
-        receiver: {
-            id: "hb56-6hgy",
-            firstName: "Sena",
-            lastName: "Kılınç"
-        },
-        message: [
-            {
-                text: "selam!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-            {
-                text: "nasılsın!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-        ]
-    },
-    {
-        id: "sldksmc-234",
-        receiver: {
-            id: "wcry432-5",
-            firstName: "Şeyma",
-            lastName: "Doğan"
-        },
-        message: [
-            {
-                text: "selam!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-            {
-                text: "nasılsın!",
-                datetime : "2022-08-20T19:00:00.000Z",
-            },
-        ]
-    },
-    {
-        id: "kdhf2ef4",
-        receiver: {
-            id: "vfdgbr5",
-            firstName: "Sena",
-            lastName: "Kılınç"
-        },
-        message: [
-            {
-                text: "selam!",
+                text: "hey!",
                 datetime : "2022-08-20T19:00:00.000Z",
             },
             {
