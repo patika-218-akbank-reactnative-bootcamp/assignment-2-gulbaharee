@@ -29,7 +29,7 @@ const Chats = () => {
                 }}
             />
             <ScrollView>
-                //according to mock data this component will be repeated
+                {/* according to mock data this component will be repeated */}
                 {chatList.map(chats =>
                     <Pressable onPress={() => { goChatBox(chats.id,chats.receiver.firstName,chats.message[0].text) }}>
                         <Chat id={chats.id} name={chats.receiver.firstName} text={chats.message[0].text}/>
